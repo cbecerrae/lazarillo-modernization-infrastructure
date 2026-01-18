@@ -21,3 +21,13 @@ variable "aws_availability_zones_ids" {
   type        = list(string)
   default     = ["use1-az1", "use1-az2", "use1-az4"]
 }
+
+variable "nominatim_db_instance_ami" {
+  description = "AMI for the Nominatim PostgreSQL EC2 instance"
+  type        = string
+}
+
+variable "nominatim_db_instance_instance_type" {
+  description = "Instance type for the Nominatim PostgreSQL EC2 instance"
+  type        = string
+}

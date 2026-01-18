@@ -10,7 +10,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket       = "lazarillo-modernization-poc-terraform-state"
+    # bucket       = "lazarillo-modernization-poc-terraform-state"
     key          = "terraform.tfstate"
     region       = "us-east-1"
     encrypt      = true
